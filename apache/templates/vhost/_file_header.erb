@@ -1,0 +1,18 @@
+ # ************************************
+ # Vhost template in module puppetlabs-apache
+ # Managed by Puppet
+ #
+ # This file is authorized for deployment by <%= scope.lookupvar('::id') %>.
+ #
+ # This file is authorized for deployment ONLY on <%= scope.lookupvar('::operatingsystem') %> <%= scope.lookupvar('::operatingsystemmajrelease')     %>.
+ #
+ # Deployment by any other user or on any other system is strictly prohibited.
+ # ************************************
+
+<VirtualHost <%= [@nvh_addr_port].flatten.compact.join(' ') %>>
+<% if @servername and not @servername.empty? -%>
+  ServerName <%= @servername %>
+<% end -%>
+<% if @serveradmin -%>
+  ServerAdmin <%= @serveradmin %>
+<% end -%>
