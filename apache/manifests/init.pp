@@ -1,4 +1,5 @@
-# Class: apache
+# This pape has been updated by Wilson
+#Class: apache
 #
 # This class installs Apache
 #
