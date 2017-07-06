@@ -1,0 +1,15 @@
+{
+  "name": "mype/motd",
+  "version": "0.1.0",
+  "author": "wilson",
+  "summary": "testing",
+  "license": "no idea",
+  "source": "local",
+  "project_page": "github",
+  "issues_url": "github",
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+  ],
+  "data_provider": null
+}
+
