@@ -24,7 +24,7 @@ class java::params {
             $jdk_package = 'java-1.6.0-openjdk-devel'
             $jre_package = 'java-1.6.0-openjdk'
           }
-          elsif (versioncmp($::operatingsystemrelease, '7.1') < 0) {
+          elsif (versioncmp($::operatingsystemrelease, '6.8') < 0) {
             $jdk_package = 'java-1.7.0-openjdk-devel'
             $jre_package = 'java-1.7.0-openjdk'
           }

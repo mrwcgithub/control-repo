@@ -43,7 +43,7 @@
 #
 class java(
   $distribution          = 'jdk',
-  $version               = 'present',
+  $version               = 'latest',
   $package               = undef,
   $package_options       = undef,
   $java_alternative      = undef,
